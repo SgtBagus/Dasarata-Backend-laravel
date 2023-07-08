@@ -19,6 +19,8 @@ class Products extends Model {
         'attachement',
         'desc',
         'price',
+        'created_at',
+        'updated_at',
     ];
 
     /**
