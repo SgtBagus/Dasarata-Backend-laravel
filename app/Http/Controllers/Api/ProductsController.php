@@ -48,6 +48,7 @@ class ProductsController extends Controller {
         return new ProductsResource(true, 'Success Get Detail Data Products!', $products);
     }
 
+    // key _method: PATCH
     public function update(Request $request, $id) {
         $validator = Validator::make($request->all(), [
             'name'          => 'required',
