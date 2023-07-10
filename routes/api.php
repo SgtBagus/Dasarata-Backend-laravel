@@ -18,4 +18,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('/produtcs', App\Http\Controllers\Api\ProductsController::class);
+/* ROUTER FOR CRUD */
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::apiResource('/produtcs', App\Http\Controllers\Api\ProductsController::class);
+});
+
+/* LOGIN LOGOUT ROUTE */
+Route::post('/login', App\Http\Controllers\Api\LoginController::class)->name('login');
+Route::post('/logout', App\Http\Controllers\Api\LogoutController::class)->name('logout');
