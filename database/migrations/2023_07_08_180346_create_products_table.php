@@ -23,7 +23,7 @@ return new class extends Migration
         $defaultProductsRows = [
             [
                 'name'          => 'Barang Pertama',
-                'attachement'   => 'https://wallpaperwaifu.com/wp-content/uploads/2023/03/hayase-yuuka-sportswear-blue-archive-thumb.jpg',
+                'attachement'   => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png',
                 'desc'          => 'ini Barang Pertama yang di input di migration',
                 'price'         => '12500.00',
                 'created_at'    => date('Y-m-d H:i:s'),
